@@ -1,0 +1,13 @@
+.home-index {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.home-index h1 {
+  font-size: 2rem;
+  font-weight: bold;
+}
