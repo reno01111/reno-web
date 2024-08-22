@@ -14,7 +14,7 @@ function Header() {
       <nav className="header_nav">
         <div className="header_nav_left">
           <div>
-            <Link href="/">RENO.</Link>
+            <Link href="/">RENOo.</Link>
           </div>
           <ul className="header_link">
             <li>
