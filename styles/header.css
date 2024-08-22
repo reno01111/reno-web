@@ -47,4 +47,10 @@
   padding: 10px 25px;
   background-color: rgb(0, 0, 0);
   border-radius: 30px;
+  transition: all 0.1s;
+}
+
+.header_nav_right a:hover {
+  opacity: 0.8;
+  text-decoration: underline;
 }
