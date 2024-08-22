@@ -7,8 +7,12 @@
   padding: 0;
 }
 
-html {
-  background-color: #d0c2a9;
+.home-index:first-child {
+  z-index: -999;
+  background-image: url("../public/image/bg_texture.jpeg");
+  background-attachment: fixed;
+  background-size: cover;
+  background-position: center;
 }
 
 .top_margin {
