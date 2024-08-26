@@ -11,40 +11,15 @@ export default function Home() {
         pageImgWidth={1280}
         pageImgHeight={960}
       />
-      <div className="home-index">
-        <div>
-          <h1>About Me.</h1>
-          <br />
-          <p style={ {maxWidth: "500px"} }>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quos iste
-            nemo quibusdam, quae fugit aliquam illum quasi doloremque id ea
-            dignissimos nam ipsum, excepturi dolores possimus vero aspernatur
-            sequi numquam dolorem! Id, accusamus? Delectus, exercitationem!
-            Error excepturi debitis nostrum at eius totam dolore libero
-            blanditiis, laborum, repellat incidunt? Soluta, ea architecto culpa
-            fuga eveniet officia corrupti eaque, deserunt molestias neque,
-            aspernatur adipisci rem tempora? Eveniet quas eligendi explicabo.
-            Magni ab quibusdam expedita alias ex. Debitis facilis eius explicabo
-            nam, saepe magni. Vero qui exercitationem beatae quasi? Reiciendis
-            distinctio doloribus nihil eveniet? Mollitia, quasi illo. Odit
-            quaerat dicta dignissimos quo voluptate.
-          </p>
-        </div>
+      {/*  */}
+      <div className="home-index paper-texture">
+        <h1>RenoWebSite</h1>
+        <div className="home-index-underline"></div>
+        <p>This site is my portfolios page.</p>
+        <p>- このサイトは私のポートフォリオサイトです。</p>
       </div>
       <div className="home-index">
-        <div>
-          <h1>Page Content.</h1>
-          <br />
-          <p style={ {maxWidth: "500px"} }>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloremque
-            nihil quisquam laboriosam sit id, accusantium, iure praesentium
-            cupiditate harum possimus soluta. Voluptatum consequatur explicabo
-            nesciunt, tempora labore adipisci vero, inventore reprehenderit
-            dicta voluptate nostrum quos dolore! Beatae minima, adipisci aperiam
-            provident voluptatum, tempore aut harum impedit necessitatibus non
-            perferendis sunt.
-          </p>
-        </div>
+        <h2>index</h2>
       </div>
     </div>
   );

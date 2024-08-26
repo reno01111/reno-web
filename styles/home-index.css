@@ -8,6 +8,13 @@
 }
 
 .home-index h1 {
-  font-size: 2rem;
+  font-size: 3rem;
+  text-shadow: #777777 1px 0 20px;
   font-weight: bold;
+}
+
+.home-index-underline {
+  width: 50vw;
+  margin: 15px 0;
+  border: dashed 1px ;
 }
