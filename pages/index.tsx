@@ -18,7 +18,10 @@ export default function Home() {
         <p>This site is my portfolios page.</p>
         <p>- このサイトは私のポートフォリオサイトです。</p>
       </div>
-      <div className="home-index">
+      <div className="home-index home-index2">
+        <h2>index</h2>
+      </div>
+      <div className="home-index home-index3">
         <h2>index</h2>
       </div>
     </div>

@@ -6,17 +6,3 @@
   font-size: 0.8rem;
   font-weight: lighter;
 }
-
-.page-top {
-  color: rgb(255, 255, 255);
-  background-color: rgb(75, 73, 70);
-  text-align: center;
-  font-size: 0.8rem;
-  font-weight: lighter;
-  padding: 5px;
-  margin-bottom: 3px;
-}
-
-.page-top button {
-  width: 100%;
-}

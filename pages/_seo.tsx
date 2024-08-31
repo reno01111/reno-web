@@ -12,8 +12,8 @@ interface MetaData {
 
 const Seo: FC<MetaData> = ({
   pageTitle = "Reno.",
-  pageDescription = "Renoのオフィシャルサイトです。",
-  pagePath = "https://reno.pages.dev", // デフォルトのURL
+  pageDescription = "Renoのポートフォリオサイトです。",
+  pagePath = "https://renodevelop.pages.dev/", // デフォルトのURL
   pageImg = "",
   pageImgWidth = 1280,
   pageImgHeight = 640,
