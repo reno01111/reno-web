@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 import { Noto_Serif_JP } from "next/font/google";
 
-import "@/styles/globals.css";
+import "../styles/globals.css";
 import "@/styles/header.css";
 import "@/styles/footer.css";
 import "@/styles/home-index.css";

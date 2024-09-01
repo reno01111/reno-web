@@ -1,0 +1,4 @@
+/* styles/docs.module.css */
+.title {
+  @apply text-3xl font-semibold;
+}
