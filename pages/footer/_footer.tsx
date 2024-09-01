@@ -4,7 +4,7 @@ function _footer() {
   return (
     <div>
       <footer className="footer">
-        <p>&copy; RENO. All Rights Reserved.</p>
+        <p>Copyright &copy; Reno. All Rights Reserved.</p>
       </footer>
     </div>
   );
