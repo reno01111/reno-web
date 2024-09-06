@@ -18,7 +18,7 @@ export function Index() {
         Contact Form
         <small className="text-sm opacity-80">お問い合わせ</small>
       </h1>
-      <form onSubmit={handleSubmitd}>
+      <form>
         <div className="Form container">
           <div className="Form-Item">
             <p className="Form-Item-Label">
@@ -29,7 +29,6 @@ export function Index() {
               className="Form-Item-Input"
               placeholder="例）山田太郎"
               required
-              ref={nameRef}
             />
           </div>
           <div className="Form-Item">
@@ -42,7 +41,6 @@ export function Index() {
               className="Form-Item-Input"
               placeholder="例）example@gmail.com"
               required
-              ref={emailRef}
             />
           </div>
           <div className="Form-Item">
@@ -55,7 +53,6 @@ export function Index() {
               className="Form-Item-Input"
               placeholder="例）サイトのバグ報告"
               required
-              ref={contentsRef}
             />
           </div>
           <div className="Form-Item">
@@ -68,7 +65,6 @@ export function Index() {
               placeholder="例）本文をここに記載本文をここに記載"
               id="freeText"
               required
-              ref={freeTextRef}
             ></textarea>
           </div>
           <button type="submit" className="Form-Btn">
