@@ -1,7 +1,7 @@
 import { AppProps } from "next/app";
 import { useEffect } from "react";
 import { useRouter } from "next/router";
-import { GoogleAnalytics } from "@next/third-parties/google";
+import Script from "next/script";
 import { Noto_Serif_JP } from "next/font/google";
 
 import "../styles/globals.css";
@@ -15,19 +15,21 @@ const notoSerifJP = Noto_Serif_JP({
   subsets: ["latin"],
 });
 
-const App = ({ Component, pageProps }: AppProps) => {
+export default function App({ Component, pageProps }: AppProps) {
   const router = useRouter();
 
   useEffect(() => {
     const handleRouteChange = (url: string) => {
       if (window.gtag) {
-        window.gtag("config", process.env.GA_ID as string, {
+        window.gtag("config", process.env.NEXT_PUBLIC_GA_ID as string, {
           page_path: url,
         });
       }
     };
 
     router.events.on("routeChangeComplete", handleRouteChange);
+
+    handleRouteChange(window.location.pathname);
 
     return () => {
       router.events.off("routeChangeComplete", handleRouteChange);
@@ -37,9 +39,14 @@ const App = ({ Component, pageProps }: AppProps) => {
   return (
     <div className={notoSerifJP.className}>
       <Component {...pageProps} />
-      <GoogleAnalytics gaId={process.env.GA_ID as string} />
+      <Script id="google-analytics" strategy="afterInteractive">
+        {`
+          window.dataLayer = window.dataLayer || [];
+          function gtag(){dataLayer.push(arguments);}
+          gtag('js', new Date());
+          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+        `}
+      </Script>
     </div>
   );
-};
-
-export default App;
+}
