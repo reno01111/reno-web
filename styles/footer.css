@@ -6,3 +6,18 @@
   font-size: 0.8rem;
   font-weight: lighter;
 }
+
+.footerLink {
+  display: flex;
+  justify-content: center;
+  margin: 40px 0;
+}
+
+.footerLink div {
+  margin: 0 50px;
+}
+
+.footerLink div ul li {
+  margin: 10px 0;
+  text-decoration: underline;
+}

@@ -7,7 +7,7 @@ export function Privacy() {
     <div>
       <Seo
         pageTitle={"Privacy Policy"}
-        pageDescription={"このページは当サイトのプライです。"}
+        pageDescription={"このページは当サイトのプライバシーポリシーを記載したページです。"}
         pageImg={"https://reno.pages.dev/images/site-ogp.jpg"}
         pageImgWidth={1280}
         pageImgHeight={960}

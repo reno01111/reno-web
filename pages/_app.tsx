@@ -5,6 +5,7 @@ import "../styles/globals.css";
 import "@/styles/header.css";
 import "@/styles/footer.css";
 import "@/styles/home-index.css";
+import "@/styles/contact.css";
 
 const notoSerifJP = Noto_Serif_JP({
   weight: "400",
