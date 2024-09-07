@@ -1,8 +1,7 @@
 import { AppProps } from "next/app";
-import { useEffect } from "react";
-import { useRouter } from "next/router";
-import Script from "next/script";
 import { Noto_Serif_JP } from "next/font/google";
+import Head from "next/head";
+import Script from "next/script";
 
 import "../styles/globals.css";
 import "@/styles/header.css";
@@ -16,37 +15,22 @@ const notoSerifJP = Noto_Serif_JP({
 });
 
 export default function App({ Component, pageProps }: AppProps) {
-  const router = useRouter();
-
-  useEffect(() => {
-    const handleRouteChange = (url: string) => {
-      if (window.gtag) {
-        window.gtag("config", process.env.NEXT_PUBLIC_GA_ID as string, {
-          page_path: url,
-        });
-      }
-    };
-
-    router.events.on("routeChangeComplete", handleRouteChange);
-
-    handleRouteChange(window.location.pathname);
-
-    return () => {
-      router.events.off("routeChangeComplete", handleRouteChange);
-    };
-  }, [router.events]);
-
   return (
     <div className={notoSerifJP.className}>
-      <Component {...pageProps} />
+      {/* Google Analytics のスクリプト */}
+      <Script
+        src="https://www.googletagmanager.com/gtag/js?id=G-5L3RKGNE4D"
+        strategy="afterInteractive" // ページのインタラクティブ後に実行
+      />
       <Script id="google-analytics" strategy="afterInteractive">
         {`
           window.dataLayer = window.dataLayer || [];
           function gtag(){dataLayer.push(arguments);}
           gtag('js', new Date());
-          gtag('config', '${process.env.NEXT_PUBLIC_GA_ID}');
+          gtag('config', 'G-5L3RKGNE4D');
         `}
       </Script>
+      <Component {...pageProps} />
     </div>
   );
 }
