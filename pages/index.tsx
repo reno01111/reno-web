@@ -18,7 +18,7 @@ export default function Home() {
         <div className="home-index paper-texture">
           <h1>RenoWebSite</h1>
           <div className="home-index-underline"></div>
-          <p>Hoppy Hacking!</p>
+          <p>Happy Hacking!</p>
         </div>
         {/* 2 */}
         <div className="home-index home-index2">
