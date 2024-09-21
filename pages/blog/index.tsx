@@ -8,7 +8,7 @@ export function index() {
       <Seo
         pageTitle={"Blog"}
         pageDescription={"このページはブログページです。"}
-        pageImg={"https://reno.pages.dev/images/site-ogp.jpg"}
+        pageImg={"https://renodevelop.pages.dev/images/site-ogp.jpg"}
         pageImgWidth={1280}
         pageImgHeight={960}
       />
